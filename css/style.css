@@ -1,16 +1,96 @@
-body{
-
-    background-color: red;
+strong {
+    font-size: 25px;
 }
-
-
-nav {
-    background-color: red;
-
-
+.nam1 {
+    margin-left: 150px;
+    margin-right: 90px;
+    
+    
+}
+.card1 {
+    margin-left: 150px;
+    margin-right: 90px;
+    border-bottom: 20px solid #015B7E; 
+    
+    
+}
+.card2 {
+    margin-left: 150px;
+    margin-right: 90px;
+    border-top: 5px solid #EF4923; 
+    
+    
+}
+.card3 {
+    margin-left: 150px;
+    margin-right: 90px;
+    border-top: 5px solid #92278F;
+    
+    
+}
+.m1 {
+    color: red;
+}
+.card4 {
+    margin-left: 150px;
+    margin-right: 90px;
+    box-sizing: content-box;  
+    border: 5px solid #0198D1;
+    }
+    .card4 :hover {
+        background-color: gray;
+        height: fixed;
+        width: 80%;
+    }
+    .card5 {
+        background-color: #F1F1F1;
+        color: black;
+    }
+.scroll1 {
+    overflow-y: scroll;
+    height: 300px;
+}
+.saiful :hover {
+    background-color: rgb(211, 190, 210);
 
 }
-
-.carousel {
-    margin-right: 25px !important;
+    
+.mobile1{
+    color: #92278F;
 }
+.text1{
+    margin-left: 157px;
+    margin-right: 155px;
+}
+.btn2 {
+    background-color: #60BB46;
+    color: white;
+}
+.btn3 {
+       background-color: #92278F;
+       color: white;
+    }
+.Top {
+        background-color: #FFFFFF;
+    }
+    .nav1 {
+        background-color: #0198D1;
+    }
+    .text1 {
+        border-block: black;
+    }
+    .nam1 {
+        background-color:#015B7E;
+    }
+    .cm1 {
+        background-color: #60BB46;
+    }
+    .textcolor {
+        color: red;
+    }
+    .color1 {
+        background-color: #015B7E;
+    }
+    .link1 {
+        color: black;
+    }

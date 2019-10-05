@@ -1,12 +1,11 @@
 
-
-nav {
-    background-color: red;
-
-
-
+.nav {
+    color: white;
 }
 
 .carousel {
     margin-right: 25px !important;
+}
+strong {
+    font-size: 25px;
 }
