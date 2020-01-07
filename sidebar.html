@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sidebar</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  <div id="sidebar">
+    <div class="toggle-btn" onclick="togglesidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <div id="slide-out" class="sidebar-container slide-nav-fixed">
+        <div class="sidebar-logo">
+          <i class="fa fa-drupal"></i> Lexa
+        </div>
+        <span style="font-size: 10px; margin-left: 15px;">MAIN</span>
+        <ul class="sidebar-navigation">
+
+          <li>
+            <a href="#">
+              <i class="fa fa-dashcube" aria-hidden="true"></i>Dashboard <span class="badge ml-5"
+                style="background-color: darkblue;">2</span>
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" aria-hidden="true"></i> Calendar
+            </a>
+          </li>
+          <li data-toggle="collapse" data-target="#email" class="collapsed">
+            <a href="#" ></a><i class="fa fa-envelope" > </i>Email <span class="arrow"></span></a>
+            </a>
+            <ul class="sub-menu collapse" id="email">
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">Email Reads</a></li>
+                <li><a href="#">Email Compose</a></li>
+            </ul>
+          </li>
+          <li class="header">COMPONENTS</li>
+          <li>
+
+            <a href="#">
+              <i class="fa fa-layer-group    "></i> UI Elements
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-wpforms"></i> Forms
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-chart-line"></i> Charts
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-table"></i> Table
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-atom"></i> Icons
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-map-marker-slash"></i> Maps
+            </a>
+          </li>
+          </li>
+          <li class="header">EXTRA</li>
+          <li>
+            <a href="#">
+              <i class="fa fa-user"></i> Authentication
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-draw-square"></i> Extra pages
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+    </ul>
+  </div>
+  <script src="js/first.js"></script>
+</body>
+
+</html>

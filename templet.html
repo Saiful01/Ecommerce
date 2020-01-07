@@ -2,48 +2,168 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Templet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Templet</title>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style1.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link 1</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+  <div id="sidebar">
+    
+    <div class="nav-side-menu">
+      <div class="brand pt-5 pb-5">Lexa</div>
+      <span class="ml-3">MAIN</span>
+      <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+      <div class="menu-list">
+
+        <ul id="menu-content" class="menu-content collapse out">
+          <li>
+            <a href="#">
+              <i class="fa fa-dashboard fa-lg"></i> Dashboard <span class="badge badge-pill badge-primary">2</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-calendar" aria-hidden="true"></i> Calendar
+            </a>
+          </li>
+
+          <li data-toggle="collapse" data-target="#email" class="collapsed">
+            <a href="#"><i class="fa fa-envelope fa-lg"></i> Email <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="email">
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Email Reads</a></li>
+            <li><a href="#">Email Compose</a></li>
           </ul>
+          <span class="ml-3">CPMPONENTS</span>
+          <li data-toggle="collapse" data-target="#products" class="collapsed">
+            <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="products">
+            <li class="active"><a href="#">Alerts</a></li>
+            <li><a href="#">cards</a></li>
+            <li><a href="#">Carousel</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Badge</a></li>
+            <li><a href="#">FontAwesome</a></li>
+            <li><a href="#">Dropdown</a></li>
+            <li><a href="#">Grid</a></li>
+            <li><a href="#">image</a></li>
+            <li><a href="#">Modall</a></li>
+          </ul>
+
+
+
+          <li data-toggle="collapse" data-target="#forms" class="collapsed">
+            <a href="#"><i class="fa fa-globe fa-lg"></i> Forms</a>
+          </li>
+          <ul class="sub-menu collapse" id="forms">
+            <li>form elements</li>
+            <li>form validatain</li>
+            <li>form advance</li>
+            <li>form editor</li>
+            <li>form file upload</li>
+            <li>form eciditable</li>
+          </ul>
+
+
+          <li data-toggle="collapse" data-target="#charts" class="collapsed">
+            <a href="#"><i class="fa fa-table fa-lg"></i> Charts <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="charts">
+            <li>Morric charts</li>
+            <li>Chartist charts</li>
+            <li>C3 charts</li>
+          </ul>
+          <li data-toggle="collapse" data-target="#table" class="collapsed">
+            <a href="#"><i class="fa fa-table fa-lg"></i> Table <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="table">
+            <li>Basic table</li>
+            <li>Data table</li>
+            <li>Response table</li>
+          </ul>
+          <li data-toggle="collapse" data-target="#icon" class="collapsed">
+            <a href="#"><i class="fa fa-table fa-lg"></i> icon <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="icon">
+            <li>Metarial design</li>
+            <li>Font awosome</li>
+            <li>lon icon</li>
+          </ul>
+          <li data-toggle="collapse" data-target="#map" class="collapsed">
+            <a href="#"><i class="fa fa-envelope fa-lg"></i> Map</a>
+          </li>
+          <ul class="sub-menu collapse" id="map">
+            <li>Google map</li>
+            <li>vector map</li>
+          </ul>
+          <span class="ml-3">Extra</span>
+          <li data-toggle="collapse" data-target="#authentication" class="collapsed">
+            <a href="#"><i class="fa fa-envelope fa-lg"></i> Authentication <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="authentication">
+            <li>Login</li>
+            <li>Register</li>
+            <li>Recover password</li>
+          </ul>
+          <li data-toggle="collapse" data-target="#extra" class="collapsed">
+            <a href="#"><i class="fa fa-table fa-lg"></i> Map <span class="arrow"></span></a>
+          </li>
+          <ul class="sub-menu collapse" id="extra">
+            <li>timeline</li>
+            <li>invoice</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="nav1">
+    <div class="navbar navbar-expand-lg bg-light pt-3 pb-3  aria-hidden=" true>
+        <div class="toggle-btn" onclick="togglesidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="MenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Create
+        </button>
+        <div class="dropdown-menu" aria-labelledby="MenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </nav>
+
+      </div>
+      <input type="text" placeholder="search" style="margin-left: 600px;">
+      <a href="#"><img src="/img/saiful.jpg" class="rounded-circle" style="height: 30px; width: 30px; margin-left: 100px;" alt="image"></a>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="js/first.js"></script>
 
 </body>
 

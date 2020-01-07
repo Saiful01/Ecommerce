@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collapsible</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/collapse.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fa fa-drupal"></i>Lexa</h3>
+            </div>
+
+
+            <ul class="list-unstyled components">
+                <span class="ml-3">MAIN</span>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-dashboard fa-lg"></i> Dashboard <span
+                            class="badge badge-pill badge-primary ml-5">2</span>
+                    </a>
+
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> Calendar
+                    </a>
+                </li>
+                <li data-toggle="collapse" data-target="#email" class="collapsed">
+                    <a href="#"><i class="fa fa-envelope fa-lg"></i> Email <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="email">
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Email Reads</a></li>
+                    <li><a href="#">Email Compose</a></li>
+                </ul>
+                <span class="ml-3">CPMPONENTS</span>
+                <li data-toggle="collapse" data-target="#products" class="collapsed">
+                    <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="products">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                    <li><a href="#">Dropdown</a></li>
+                    <li><a href="#">Grid</a></li>
+                    <li><a href="#">image</a></li>
+                    <li><a href="#">Modall</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#forms" class="collapsed">
+                    <a href="#"><i class="fa fa-globe fa-lg"></i> Forms</a>
+                </li>
+                <ul class="sub-menu collapse" id="forms">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#charts" class="collapsed">
+                    <a href="#"><i class="fa fa-table fa-lg"></i> Charts <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="charts">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#table" class="collapsed">
+                    <a href="#"><i class="fa fa-table fa-lg"></i> Table <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="table">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#icon" class="collapsed">
+                    <a href="#"><i class="fa fa-table fa-lg"></i> icon <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="icon">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#map" class="collapsed">
+                    <a href="#"><i class="fa fa-envelope fa-lg"></i> Map</a>
+                </li>
+                <ul class="sub-menu collapse" id="map">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                </ul>
+                <span class="ml-3">Extra</span>
+                <li data-toggle="collapse" data-target="#authentication" class="collapsed">
+                    <a href="#"><i class="fa fa-envelope fa-lg"></i> Authentication <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="authentication">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#extra" class="collapsed">
+                    <a href="#"><i class="fa fa-table fa-lg"></i> Map <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="extra">
+                    <li><a href="#">Alerts</a></li>
+                    <li><a href="#">cards</a></li>
+                    <li><a href="#">Carousel</a></li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Badge</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                </ul>
+
+
+        </nav>
+
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fa fa-align-justify"></i>
+                </button>
+
+                <div class="dropdown ml-5">
+                    <button class="btn dropdown-toggle btn-secondary" type="button" id="MenuButton"
+                        data-toggle="dropdown">
+                        Create
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="MenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+
+                </div>
+                <input type="text" placeholder="search" style="margin-left: 600px;">
+                <a href="#"><img src="/img/saiful.jpg" class="rounded-circle"
+                        style="height: 30px; width: 30px; margin-left: 100px;" alt="image"></a>
+            </nav>
+            <div class="container">
+                <p>
+                    The Battle of Neville's Cross took place on 17 October 1346 during the Second War of Scottish
+                    Independence, half a mile (800 m) to the west of Durham, England. During the Hundred Years' War,
+                    King Philip VI of France called on the Scots to fulfil their obligation under the terms of the Auld
+                    Alliance. King David II obliged and ravaged part of northern England. An English army of
+                    approximately 6,000–7,000 men led by Lord Ralph Neville took David by surprise on a hill marked by
+                    an Anglo-Saxon stone cross. David's army of 12,000 was defeated, he was captured, and most of his
+                    leadership was killed or captured. The English victory freed significant resources for their war
+                    against France, and the English border counties were able to guard against the remaining Scottish
+                    threat from their own resources. The eventual ransoming of the Scottish king resulted in a truce
+                    which brought peace to the border for forty years. (Full article...)
+                </p>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+
+
+
+    <script src="js/first.js"></script>
+
+</body>
+
+</html>
